@@ -1,0 +1,24 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = "*"
+pytest-cov = "*"
+pre-commit = "*"
+
+[packages]
+tox = "*"
+cookiecutter = "*"
+virtualenv = ">=16.6.0"
+six = ">=1.14.0"
+Jinja2 = "*"
+setuptools = {editable = true, path = "."}
+luigi = "*"
+dask = {extras = ["dataframe"], version = "*"}
+fastparquet = "*"
+s3fs = "*"
+
+[requires]
+python_version = "3.8"
